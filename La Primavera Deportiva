@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Primavera Deportiva</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background: linear-gradient(to bottom, #ffeb3b, #ff9800); color: #333; scroll-behavior: smooth;}
+    header {background: #f44336; color: white; padding: 40px 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.2);}
+    header img {max-width: 150px; margin-bottom: 15px;}
+    header h1 { margin: 0; font-size: 2.5rem; }
+    nav {display: flex; justify-content: center; background-color: #3f51b5; position: sticky; top: 0; z-index: 100;}
+    nav a {color: white; text-decoration: none; padding: 14px 20px; transition: 0.3s;}
+    nav a:hover { background-color: #2196f3; }
+    section { padding: 50px 20px; max-width: 900px; margin: auto; }
+    h2 { color: #e91e63; text-align: center; margin-bottom: 30px; font-size: 2rem; }
+    .cards { display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; }
+    .card { background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); width: 250px; text-align: center; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;}
+    .card:hover { transform: translateY(-10px); box-shadow: 0 10px 25px rgba(0,0,0,0.3); }
+    .card img { width: 100%; height: 150px; object-fit: cover; }
+    .card h3 { margin: 15px 0 10px 0; color: #ff5722; }
+    .card p { padding: 0 15px; font-size: 0.95rem; }
+    a.enlace {display: inline-block; background-color: #009688; color: white; padding: 12px 25px; text-decoration: none; border-radius: 8px; margin-top: 20px; font-weight: bold; transition: 0.3s;}
+    a.enlace:hover { background-color: #00796b; }
+    form input, form textarea {width: 100%; padding: 12px; margin: 5px 0 15px 0; border-radius: 8px; border: 1px solid #ccc; font-family: 'Roboto', sans-serif;}
+    form input[type="submit"] {background-color: #009688; color: white; border: none; cursor: pointer; padding: 12px 20px; font-size: 1rem; border-radius: 8px; transition: 0.3s;}
+    form input[type="submit"]:hover { background-color: #00796b; }
+    footer {text-align: center; padding: 20px; background-color: #3f51b5; color: white; font-size: 0.9rem;}
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Institut_Ramon_Barbat_logo.svg/2560px-Institut_Ramon_Barbat_logo.svg.png" alt="Logo Institut Ramon Barbat">
+    <h1>La Primavera Deportiva 2025</h1>
+    <p>¡Participa, diviértete y disfruta del deporte! Patrocinado por Institut Ramon Barbat</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#eventos">Eventos</a>
+    <a href="#actividades">Clases</a>
+    <a href="#informacion">Información</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="inicio">
+    <h2>Bienvenidos</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+      La Primavera Deportiva es nuestro proyecto anual que fomenta el deporte, la salud y la diversión entre todos los estudiantes. ¡Anímate a participar! Inscripciones abiertas hasta el <strong>1 de Abril</strong>. Pago en efectivo y al momento. La inscripción para la cursa y el torneo de fútbol es de <strong>16,99 €</strong> por participante.
+    </p>
+    <div style="text-align:center; margin-top:20px;">
+      <a href="#contacto" class="enlace">Inscríbete aquí</a>
+    </div>
+  </section>
+
+  <section id="eventos">
+    <h2>Eventos Deportivos</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/2402771/pexels-photo-2402771.jpeg" alt="Carrera Infantil">
+        <h3>Ruta de Carrera</h3>
+        <p>Participa y demuestra tu velocidad y resistencia. Carrera para pequeños: 120 m; de 9 a 18 años: 5 km; demás edades: 5 km. 10 equipos por categoría. Premio para los primeros puestos. Los participantes recibirán <strong>camisetas de regalo</strong>.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/3991876/pexels-photo-3991876.jpeg" alt="Fútbol Femenino Real">
+        <h3>Torneo Fútbol Femenino</h3>
+        <p>Competencia entre 10 equipos femeninos. Trabajo en equipo y diversión garantizada. Premio para el primer puesto. Inscripción: <strong>16,99 €</strong>.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/114296/pexels-photo-114296.jpeg" alt="Fútbol Masculino">
+        <h3>Torneo Fútbol Masculino</h3>
+        <p>Diez equipos masculinos competirán mostrando energía y deportividad. Premio para el primer puesto. Inscripción: <strong>16,99 €</strong>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="actividades">
+    <h2>Clases y Actividades</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/3763871/pexels-photo-3763871.jpeg" alt="Zumba Real">
+        <h3>Zumba</h3>
+        <p>Clases con ritmo y diversión para mover el cuerpo y liberar energía.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg" alt="Pilates">
+        <h3>Pilates</h3>
+        <p>Ejercicios para fortalecer el cuerpo, mejorar la postura y relajarse.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="informacion">
+    <h2>Información Adicional</h2>
+    <ul>
+      <li>Registro obligatorio antes de participar en cualquier actividad.</li>
+      <li>Se asignarán 10 equipos para cada torneo y carrera.</li>
+      <li>Clases de Zumba y Pilates abiertas para todos los estudiantes.</li>
+      <li>Habrá un mini bar disponible durante el evento para sacar beneficio.</li>
+      <li>Planificación del evento: Primer día - Carrera, Zumba y Pilates; Segundo día - Desayuno popular con música de ambiente.</li>
+      <li>Habrá premios para los primeros puestos de fútbol y carrera, así como regalos relacionados con el instituto.</li>
+      <li>El pago de la inscripción es en efectivo y al momento.</li>
+      <li>Los precios de inscripción: cursa y torneo de fútbol <strong>16,99 €</strong> por participante. En la cursa se regalarán camisetas.</li>
+    </ul>
+  </section>
+
+  <section id="contacto">
+    <h2>Formulario de Inscripción / Contacto</h2>
+    <form style="max-width:600px; margin:auto;">
+      <label>Nombre:</label>
+      <input type="text" name="nombre" required>
+      <label>Email:</label>
+      <input type="email" name="email" required>
+      <label>Mensaje:</label>
+      <textarea name="mensaje" rows="4" required></textarea>
+      <input type="submit" value="Enviar">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 La Primavera Deportiva - Colegio XYZ | Patrocinado por Institut Ramon Barbat</p>
+  </footer>
+
+</body>
+</html>
